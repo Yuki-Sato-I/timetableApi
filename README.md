@@ -1,24 +1,32 @@
-# README
+# 時間割API
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## 全ての時間割を獲得
 
-Things you may want to cover:
+Get /apis/index
 
-* Ruby version
+## その時間の受けることが可能な授業
 
-* System dependencies
+GET /apis/show/(ここに曜日)/(ここに開始コマ数字)/(学部)
 
-* Configuration
+## 時間割作成
+POST /apis/create_timetable
+json形式
+{ 
+  "title": "教養科目２",
+  "teacher": "Mr.sato",
+  "credit": 3, 
+  "day": "Friday", 
+  "hours": 2, 
+  "year": "2019", 
+  "faculty": "理工学部", 
+  "specialty?": true
+}
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## 時間割の評価
+POST /apis/create_evaluation
+json形式
+{ 
+  "timetable_id": 1,
+  "content": "良い授業です",
+  "star": 3
+}
