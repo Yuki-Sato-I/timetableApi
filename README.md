@@ -9,7 +9,6 @@ GET `/apis/index`
 GET `/apis/show/(ここに曜日)/(ここに開始コマ数字)/(学部)`
 
 ### 時間割作成
-<br>
 POST `/apis/create_timetable`
 json形式
 
