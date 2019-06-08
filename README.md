@@ -2,7 +2,7 @@
 
 ### 全ての時間割を獲得
 
-Get `/apis/index`
+GET `/apis/index`
 
 ### その時間の受けることが可能な授業
 
@@ -28,7 +28,7 @@ json形式
 
 ### 時間割の評価
 
-`POST /apis/create_evaluation`
+POST `/apis/create_evaluation`
 json形式
 
 ```
