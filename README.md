@@ -1,16 +1,19 @@
-# 時間割API
+## 時間割API
 
-## 全ての時間割を獲得
+### 全ての時間割を獲得
 
-Get /apis/index
+Get `/apis/index`
 
-## その時間の受けることが可能な授業
+### その時間の受けることが可能な授業
 
-GET /apis/show/(ここに曜日)/(ここに開始コマ数字)/(学部)
+GET `/apis/show/(ここに曜日)/(ここに開始コマ数字)/(学部)`
 
-## 時間割作成
-POST /apis/create_timetable
+### 時間割作成
+<br>
+POST `/apis/create_timetable`
 json形式
+
+```
 { 
   "title": "教養科目２",
   "teacher": "Mr.sato",
@@ -21,12 +24,17 @@ json形式
   "faculty": "理工学部", 
   "specialty?": true
 }
+```
 
-## 時間割の評価
-POST /apis/create_evaluation
+### 時間割の評価
+
+`POST /apis/create_evaluation`
 json形式
+
+```
 { 
   "timetable_id": 1,
   "content": "良い授業です",
   "star": 3
 }
+```
