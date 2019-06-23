@@ -17,7 +17,17 @@ Timetable.create!(
       hours: 1,
       year: '2019',
       faculty: '理工学部',
-      specialty?: true
+      specialty?: true,
+     },
+     {
+      title: 'デバック教養科目',
+      teacher: 'ゆうき',
+      credit: 2,
+      day: 'Monday',
+      hours: 1,
+      year: '2019',
+      faculty: '理工学部',
+      specialty?: false,
      },
     {
      title: 'デバック教養科目',
@@ -27,7 +37,7 @@ Timetable.create!(
      hours: 3,
      year: '2019',
      faculty: '農学部',
-     specialty?: false
+     specialty?: false,
     },
    {
      title: 'メディアシステム',
@@ -37,7 +47,7 @@ Timetable.create!(
      hours: 2,
      year: '2019',
      faculty: '理工学部',
-     specialty?: true
+     specialty?: true,
    },
    {
     title: 'ソフトウェア設計及び演習',
@@ -47,7 +57,7 @@ Timetable.create!(
     hours: 3,
     year: '2019',
     faculty: '理工学部',
-    specialty?: true
+    specialty?: true,
    },
    {
     title: 'コンピュータグラフィックス',
@@ -57,7 +67,7 @@ Timetable.create!(
     hours: 1,
     year: '2019',
     faculty: '理工学部',
-    specialty?: true
+    specialty?: true,
    },
    {
     title: '人工知能',
@@ -67,7 +77,7 @@ Timetable.create!(
     hours: 3,
     year: '2019',
     faculty: '理工学部',
-    specialty?: true
+    specialty?: true,
    },
    {
     title: '形式言語とオートマトン',
@@ -77,7 +87,7 @@ Timetable.create!(
     hours: 1,
     year: '2019',
     faculty: '理工学部',
-    specialty?: true
+    specialty?: true,
    },
    {
     title: 'ネットワーク実験',
@@ -87,7 +97,7 @@ Timetable.create!(
     hours: 3,
     year: '2019',
     faculty: '理工学部',
-    specialty?: true
+    specialty?: true,
    },
    {
     title: '情報工学特別講義',
@@ -97,7 +107,7 @@ Timetable.create!(
     hours: 1,
     year: '2019',
     faculty: '理工学部',
-    specialty?: true
+    specialty?: true,
    },
    {
     title: '信号処理',
@@ -107,7 +117,7 @@ Timetable.create!(
     hours: 2,
     year: '2019',
     faculty: '理工学部',
-    specialty?: true
+    specialty?: true,
    },
    {
     title: 'コンピュータアーキテクチャ',
@@ -117,7 +127,7 @@ Timetable.create!(
     hours: 3,
     year: '2019',
     faculty: '理工学部',
-    specialty?: true
+    specialty?: true,
    },
    {
     title: 'コンピュータネットワーク',
@@ -127,7 +137,7 @@ Timetable.create!(
     hours: 2,
     year: '2019',
     faculty: '理工学部',
-    specialty?: true
+    specialty?: true,
    }
   ]
 )
@@ -137,23 +147,43 @@ Evaluation.create!(
   [
     {
       timetable_id: 1,
+      title: "すごかったよ",
       content: "すごい授業1",
-      star: 3,
+      user: "default1",
+      star: 3.0,
+      permission: true,
     },
     {
       timetable_id: 1,
+      title: "すごかったよ",
+      content: "すごい授業1",
+      user: "default1",
+      star: 3.0,
+      permission: false,
+    },
+    {
+      timetable_id: 1,
+      title: "aaaaaaa",
       content: "すごい授業2",
-      star: 4,
+      user: "default2",
+      star: 4.5,
+      permission: true,
     },
     {
       timetable_id: 1,
+      title: "すごかったよwaddsvf",
       content: "すごい授業3",
-      star: 3,
+      user: "default3",
+      star: 3.0,
+      permission: true,
     },
     {
       timetable_id: 2,
+      title: "すごかったよ",
       content: "すごい授業4",
-      star: 3,
+      user: "default288",
+      star: 3.0,
+      permission: true,
     }
   ]
 )

@@ -14,8 +14,11 @@ ActiveRecord::Schema.define(version: 2019_06_06_133221) do
 
   create_table "evaluations", force: :cascade do |t|
     t.integer "timetable_id"
+    t.string "title"
     t.text "content"
-    t.integer "star"
+    t.string "user"
+    t.float "star"
+    t.boolean "permission"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
