@@ -32,8 +32,11 @@ json形式
 
 ```
 { 
-  "timetable_id": 1,
-  "content": "良い授業です",
-  "star": 3
+  timetable_id: 1,
+  title: "すごかったよwaddsvf",
+  content: "すごい授業3",
+  user: "default3",
+  star: 3.0,
+  permission: true,
 }
 ```
