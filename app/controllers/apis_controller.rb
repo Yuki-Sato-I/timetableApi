@@ -43,6 +43,6 @@ class ApisController < ApplicationController
   end
   
   def evaluation_params
-    params.permit(:timetable_id, :content, :star)
+    params.permit(:timetable_id, :title, :content, :user, :star, :permission)
   end
 end
